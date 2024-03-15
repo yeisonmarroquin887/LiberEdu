@@ -1,0 +1,84 @@
+.Home {
+	background-color: var(--White);
+}
+.Home_header {
+	background-color: var(--BlueBlack);
+	color: var(--White);
+	position: fixed;
+	width: 100%;
+	height: 5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.Home_nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Home_nav > h1 {
+	color: var(--Red);
+	font-size: 1.8em;
+	margin-top: .5em;
+	text-align: center;
+}
+.Home_nav > nav {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+}
+.Home_nav > nav > li {
+	background-color: var(--BlueBlack);
+	color: var(--White);
+	padding: .5em;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 3em;
+	display: flex;
+	align-items: center;
+}
+.Home_nav > nav > li:focus{
+	background-color:  var(--BlueClar);
+	color: rgb(210, 184, 235);
+	border: 2px solid rgb(13, 6, 105);
+}
+.Home_btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Home_btn > button {
+	background-color: var(--BlueClar);
+	color: var(--White);
+	padding: .8em;
+	width: 100%;
+	max-width: 10em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.Home_logo-info {
+	display: flex;
+	padding: 2em;
+	gap: 1em;
+	flex-wrap: nowrap;
+	align-items: center;
+
+}
+.Home_logo-info > figure {
+	width: 100%;
+	max-width: 5em;
+	margin: auto;
+}
+.Home_logo-info > div > p {
+	font-weight: 500;
+	color: var(--BlueBlack);
+	max-width: 30em;
+}

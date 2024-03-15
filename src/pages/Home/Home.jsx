@@ -1,7 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/Home.css'
+import { useNavigate} from 'react-router-dom'
 
 const Home = () => {
+const [Rol, setRol] = useState(null)
+ const navigate = useNavigate()
+
+ const seleccionarRol = (rol) => {
+	setRol(rol)
+ }
+
+ const enviar = () => {
+	switch (Rol) {
+		case 1:
+			navigate("login-docente")
+			break;
+
+		case 2:
+			 navigate("login-estudiante")
+			break;
+
+		case 3:
+			navigate("login-acudiente")
+			break;
+	
+		default:
+			break;
+	}
+ }
+
 
   return (
 	<article className='Home'>
@@ -23,12 +50,12 @@ const Home = () => {
 			<section className='Roles'>
 			<h1>Elige tu rol para poder ingresar</h1>
 			<nav>
-				<li tabindex="0">Docentes</li>
-				<li tabindex="0">Estudiantes</li>
-				<li tabindex="0">Acudientes</li>
+				<li onClick={() => seleccionarRol(1)} tabindex="0">Docentes</li>
+				<li  onClick={() => seleccionarRol(2)} tabindex="0">Estudiantes</li>
+				<li onClick={() => seleccionarRol(3)} tabindex="0">Acudientes</li>
 			</nav>
 			<div className='Home_btn'>
-				<button>Ingresar</button>
+				<button onClick={enviar}>Ingresar</button>
 			</div>
 			</section>
 			 <div className='Home_logo-info'>

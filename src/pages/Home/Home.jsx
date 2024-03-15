@@ -16,9 +16,11 @@ const Home = () => {
 		<br />
 
 		<figure>
-			<img src="../../../images/Bienvenida .jpg" alt="" />
+			<img className='movil' src="../../../images/Bienvenida .jpg" alt="" />
+			<div className='pc'></div>
 		</figure>
 		<section className='Home_nav'>
+			<section className='Roles'>
 			<h1>Elige tu rol para poder ingresar</h1>
 			<nav>
 				<li tabindex="0">Docentes</li>
@@ -28,6 +30,7 @@ const Home = () => {
 			<div className='Home_btn'>
 				<button>Ingresar</button>
 			</div>
+			</section>
 			 <div className='Home_logo-info'>
 				<figure>
 					<img src="../../../images/Logo SiberEdu.jpg" alt="" />

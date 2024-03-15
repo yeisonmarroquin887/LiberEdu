@@ -18,13 +18,13 @@
 	justify-content: center;
 	align-items: center;
 }
-.Home_nav > h1 {
+.Home_nav > section > h1 {
 	color: var(--Red);
 	font-size: 1.8em;
 	margin-top: .5em;
 	text-align: center;
 }
-.Home_nav > nav {
+.Home_nav > section > nav {
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 1em;
@@ -32,7 +32,7 @@
 	align-items: center;
 	padding: 2em;
 }
-.Home_nav > nav > li {
+.Home_nav > section > nav > li {
 	background-color: var(--BlueBlack);
 	color: var(--White);
 	padding: .5em;
@@ -42,7 +42,7 @@
 	display: flex;
 	align-items: center;
 }
-.Home_nav > nav > li:focus{
+.Home_nav > section > nav > li:focus{
 	background-color:  var(--BlueClar);
 	color: rgb(210, 184, 235);
 	border: 2px solid rgb(13, 6, 105);
@@ -81,4 +81,107 @@
 	font-weight: 500;
 	color: var(--BlueBlack);
 	max-width: 30em;
+}
+.pc {
+	display: none;
+}
+@media (min-width: 600px) {
+	.Home {
+		background-color: var(--White);
+	}
+   .pc {
+	display: block;
+	margin-top: -4em;
+	background-image: url(../../../../images/Bienvenida_pc.png);
+	height: 24em;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: .2em;
+   }
+   .Home_header > h1 {
+	font-size: 1.6em;
+   }
+   .movil {
+	display: none;
+   }
+   .Roles {
+	background-color: rgba(0, 0, 0, 0.349);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-top: 5em;
+	height: 100vh;
+   }
+   .Home_nav > section > h1 {
+	color: var(--BlueBlack);
+	font-size: 1.8em;
+	margin-top: .5em;
+	text-align: center;
+	-webkit-text-stroke: 1px white; 
+    text-stroke: .5px white;
+}
+.Home_nav > section > nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2em;
+	margin-top: 3em;
+}
+.Home_nav > section > nav > li {
+	background-color: var(--BlueBlack);
+	color: var(--White);
+	padding: .5em;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 3.5em;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 8em;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Home_btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5em;
+}
+.Home_btn > button {
+	background-color: var(--BlueClar);
+	color: var(--White);
+	padding: .8em;
+	width: 100%;
+	max-width: 12em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.Home_logo-info {
+	display: flex;
+	padding: 2em;
+	gap: 01em;
+	flex-wrap: nowrap;
+	align-items: center;
+
+}
+.Home_logo-info > figure {
+	width: 100%;
+	max-width: 10em;
+	margin: auto;
+}
+.Home_logo-info > div > p {
+	font-weight: 500;
+	color: var(--BlueBlack);
+	max-width: 30em;
+	font-size: 1.5em;
+}
 }

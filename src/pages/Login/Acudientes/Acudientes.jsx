@@ -39,9 +39,11 @@ const Acudientes = () => {
 				</div>
 			</form>
 			<div className={Errorr ?"error" :"noerror"}>
+				<div className="err">
 				<h1>Error</h1>
 				<p>Has ingresado mal la contraseña <br />o no eres Acudiente</p>
 				<button onClick={noerror}>Intentar de nuevo</button>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -40,10 +40,14 @@ const Docentes = () => {
 					<button onClick={error}>Ingresar</button>
 				</div>
 			</form>
+
 			<div className={Errorr ?"error" :"noerror"}>
+				<div className="err">
 				<h1>Error</h1>
 				<p>Has ingresado mal la contraseña <br /> o no eres docente</p>
 				<button onClick={noerror}>Intentar de nuevo</button>
+
+				</div>
 			</div>
 		</div>
 	</div>

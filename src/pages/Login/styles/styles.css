@@ -64,7 +64,62 @@
 	color: var(--White);
 	border: none;
 	border-radius:  6px;
+	cursor: pointer;
 }
+.noerror {
+	transform: scale(0);
+	height: 0;
+}
+.error {
+	display: block;
+	position: absolute;
+	background-color: var(--BlueBlack);
+	width: 100%;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	text-align: center;
+	height: 25em;
+}
+.err {
+	display: block;
+	position: absolute;
+	background-color: var(--BlueBlack);
+	width: 100%;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	text-align: center;
+	height: 25em;
+}
+.error > div > h1 {
+	color: var(--Red);
+	font-size: 2em;
+	font-weight: 400;
+	-webkit-text-stroke: .1px rgb(201, 198, 198); 
+}
+.error > div > p {
+	color: var(--White);
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-top: -1em;
+}
+.error > div > button {
+	font-size: 1.2em;
+	padding: .8em;
+	border: none;
+	border-radius: 5px;
+	color: var(--White);
+	background-color: var(--Red);
+	cursor: pointer;
+}
+
 @media (min-width: 550px) {
 	.Login {
 		background-image: url(../../../../images/Bienvenida\ .jpg);
@@ -78,6 +133,7 @@
 		border: 1em solid rgb(173, 170, 170);
 	}
 	.Login_form {
+		position: relative;
 		width: 100%;
 		max-width: 700px;
 		display: grid;
@@ -154,5 +210,57 @@
 	margin: auto;
 	width: 100%;
 	max-width: 10em;
+}
+
+.error {
+	display: block;
+	position: fixed;
+	background-color: rgba(36, 35, 34, 0.418);
+	width: 100%;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	text-align: center;
+	height: 100vh;
+	left: 0;
+    backdrop-filter: blur(2px);
+}
+.error > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}
+.error > div > h1 {
+	color: var(--Red);
+	font-size: 2em;
+	font-weight: 500;
+	-webkit-text-stroke: .1px rgb(201, 198, 198); 
+}
+.error > div > p {
+	color: var(--BlueBlack);
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.error > div > button {
+	font-size: 1.2em;
+	padding: .8em;
+	border: none;
+	border-radius: 5px;
+	color: var(--White);
+	background-color: var(--Red);
+	cursor: pointer;
+}
+.err {
+	background-color:  var(--White);
+	width: 100%;
+	max-width: 40em;
+	padding: 3em;
+	height: 60vh;
+    border-radius: 1em;
 }
 }

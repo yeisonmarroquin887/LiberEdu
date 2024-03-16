@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate} from 'react-router-dom'
 import '../styles/styles.css'
 
 
 const Estudiantes = () => {
+	const [Errorr, setErrorr] = useState(false)
 	const navigate = useNavigate()
 	const volver = () => {
 		navigate("/")
+	}
+
+    const  error = () => {
+		setErrorr(true)
+	}
+	const  noerror = () => {
+		setErrorr(false)
 	}
 
   return (
@@ -29,9 +37,16 @@ const Estudiantes = () => {
 				</div>
 				<h2 className='Olvido'>Olvidaste la contraseña</h2>
 				<div className='Login_btn'>
-					<button>Ingresar</button>
+					<button onClick={error}>Ingresar</button>
 				</div>
 			</form>
+			<div className={Errorr ?"error" :"noerror"}>
+				<div className='err'>
+				<h1>Error</h1>
+				<p>Has ingresado mal <br /> la contraseña </p>
+				<button onClick={noerror}>Intentar de nuevo</button>
+				</div>
+			</div>
 		</div>
 	</div>
   )

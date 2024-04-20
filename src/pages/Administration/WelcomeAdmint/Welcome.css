@@ -1,7 +1,7 @@
 .Welcome_menu {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 35%;
 	position: fixed;
 	height: 100vh;
 	background-color: var(--BlueBlackAdmint);

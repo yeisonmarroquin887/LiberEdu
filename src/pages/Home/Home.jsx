@@ -13,15 +13,15 @@ const [Rol, setRol] = useState(null)
  const enviar = () => {
 	switch (Rol) {
 		case 1:
-			navigate("login-docente")
+			navigate("/login-docente")
 			break;
 
 		case 2:
-			 navigate("login-estudiante")
+			 navigate("/login-estudiante")
 			break;
 
 		case 3:
-			navigate("login-acudiente")
+			navigate("/login-acudiente")
 			break;
 	
 		default:

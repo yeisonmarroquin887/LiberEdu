@@ -47,6 +47,7 @@
 	color: rgb(210, 184, 235);
 	border: 2px solid rgb(13, 6, 105);
 }
+
 .Home_btn {
 	width: 100%;
 	display: flex;
@@ -119,7 +120,6 @@
 	margin-top: .5em;
 	text-align: center;
 	-webkit-text-stroke: 1px white; 
-    text-stroke: .5px white;
 }
 .Home_nav > section > nav {
 	display: flex;

@@ -4,6 +4,8 @@
   --BlueBlack: rgb(28, 28, 150);
   --Red: red;
   --BlueClar: rgb(71, 71, 172);
+  --BlueAdmintClar:  #060c3fe1;
+  --BlueBlackAdmint: #060C3F;
 }
 *{
   margin: 0;

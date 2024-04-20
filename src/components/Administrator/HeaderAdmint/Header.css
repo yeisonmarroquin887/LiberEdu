@@ -1,0 +1,18 @@
+.Header{
+	width: 100%;
+	background-color: var(--BlueBlackAdmint);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+ }
+ .Header > figure > img {
+	max-width: 3.5em;
+	border-radius: 50%;
+ }
+ .Header > div > i {
+	color: var(--White);
+	font-size: 3em;
+	cursor: pointer;
+ }
+ 

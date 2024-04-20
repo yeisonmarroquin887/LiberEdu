@@ -1,0 +1,157 @@
+.Admint{
+	position: relative;
+	background-color: #b0a2d8;
+	height: 100vh;
+}
+.Admint_Header{
+   width: 100%;
+   background-color: var(--BlueBlackAdmint);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+}
+.Admint_Header > figure > img {
+   max-width: 5em;
+   border-radius: 50%;
+}
+
+
+.Admint_body > h1 {
+	position: absolute;
+	bottom: 10%;
+	text-align: center;
+	width: 100%;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.Admint_from {
+	background-color: var( --BlueAdmintClar);
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+	top: 30%;
+	height: 19em;
+	gap: .6em;
+}
+.Admint_from > div {
+	display: flex;
+	flex-direction: column;
+	gap: .3em;
+}
+.Admint_from > div > label {
+	color: var(--White);
+	font-size: 1.5em;
+}
+.Admint_from > div > input {
+	width: 100%;
+	padding: 1em;
+	border-radius: .6em;
+}
+.Admint_from > button {
+	padding: .5em;
+	width: 100%;
+	max-width: 10em;
+	font-size: 1.4em;
+	margin: auto;
+	background-color: var(--BlueBlackAdmint);
+	border: none;
+	border-radius: .4em;
+	cursor: pointer;
+	color: var(--White);
+	margin-top: .5em;
+}
+.AdmintPc {
+	display: none;
+}
+.Admint_Logo {
+display: none;
+}
+.From_Olvido {
+	display: none;
+}
+@media (min-width: 550px) {
+	.Admint_Header {
+		height: 4.5em;
+	}
+	.Admint_body > h1 {
+display: none;
+	}
+	.Admint_Header > figure > img {
+		max-width: 4em;
+		border-radius: 50%;
+	 }
+	.AdmintMovil {
+		display: none;
+	}
+	.AdmintPc {
+		display: block;
+	}
+	.Admint_from {
+		max-width: 40em;
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -15%);
+		height: 30em;
+		justify-content: center;
+		padding-top: 6em;
+		background-color: var(--White);
+		gap: 3em;
+		border: .9em solid rgb(156, 151, 151);
+	}
+	.Admint_from > div {
+		display: flex;
+		flex-direction: row;
+		gap: 0em;
+	}
+	.Admint_Logo {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: .4em;
+		margin-top: -3em;
+	}
+	.Admint_Logo > img {
+		max-width: 4em;
+	}
+	.Admint_Logo > h1 {
+		font-size: 1.3em;
+		color: red;
+	}
+	.Admint_from > div > label {
+		color: var(--BlueBlackAdmint);
+		font-size: 1.5em;
+		border-bottom: 2px solid var(--BlueBlackAdmint);
+	}
+	.Admint_from > div > input {
+		width: 100%;
+		padding: 1em;
+		border-radius: .6em;
+		border: none;
+		border-bottom: 2px solid var(--BlueBlackAdmint);
+		border-radius: 0;
+	}
+	.From_Olvido {
+		margin-top: -2.5em;
+		cursor: pointer;
+		display: block;
+	}
+	.Admint_from > button {
+		padding: .5em;
+		width: 100%;
+		max-width: 10em;
+		font-size: 1.4em;
+		margin: auto;
+		background-color: var(--BlueBlackAdmint);
+		border: none;
+		border-radius: .4em;
+		cursor: pointer;
+		color: var(--White);
+		margin-top: 0em;
+	}
+}

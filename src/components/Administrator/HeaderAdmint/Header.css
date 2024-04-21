@@ -5,6 +5,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 1em;
+	z-index: 1000;
  }
  .Header > figure > img {
 	max-width: 3.5em;

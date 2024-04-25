@@ -13,7 +13,7 @@ const WelcomeTeacher = () => {
 	      <header className="barra">
         <div className="logo">
 			<figure>
-				<img src="../../../public/images/Logo SiberEdu.jpg" alt="" />
+				<img src="../../../images/Logo SiberEdu.jpg" alt="" />
 			</figure>
             <i className='bx bxs-user-circle'></i>
         </div>

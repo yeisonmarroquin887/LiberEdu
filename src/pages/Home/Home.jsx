@@ -54,10 +54,10 @@ const [Rol, setRol] = useState(null)
 			<section className='Roles'>
 			<h1>Elige tu rol para poder ingresar</h1>
 			<nav>
-				<li onClick={() => seleccionarRol(1)} tabindex="0">Docentes</li>
-				<li  onClick={() => seleccionarRol(2)} tabindex="0">Estudiantes</li>
-				<li onClick={() => seleccionarRol(3)} tabindex="0">Acudientes</li>
-				<li onClick={() => seleccionarRol(4)} tabindex="0">Administrativo</li>
+				<li onClick={() => seleccionarRol(1)} >Docentes</li>
+				<li  onClick={() => seleccionarRol(2)} >Estudiantes</li>
+				<li onClick={() => seleccionarRol(3)} >Acudientes</li>
+				<li onClick={() => seleccionarRol(4)}>Administrativo</li>
 			</nav>
 			<div className='Home_btn'>
 				<button onClick={enviar}>Ingresar</button>

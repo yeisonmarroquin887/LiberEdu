@@ -1,0 +1,31 @@
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    height: 50px;
+}
+.logo p{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    padding: .3em;
+}
+.logo i {
+    font-size: 50px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+.Acudent-option {
+	background-color: var(--BlueBlackAdmint);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: 1em;
+    margin-bottom: 5px;
+	cursor: pointer;
+}

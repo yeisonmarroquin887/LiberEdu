@@ -11,6 +11,7 @@ import TeacherWork from './pages/Teachers/TeacherWork/TeacherWork'
 import WelcomeStudents from './pages/Estudents/WelcomeEstudents/WelcomeStudents'
 import WorkStudent from './pages/Estudents/WorkStudents/WorkStudent'
 import WelcomeAcudent from './pages/Acudents/WelcomeAcuents/WelcomeAcudent'
+import SeeAcudents from './pages/Acudents/SeeAcudent/SeeAcudents'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
        <Route path='/work-students'  element={<WorkStudent/>}/>
        <Route path='/login-acudiente'  element={<Acudientes/>}/>
        <Route path='/welcome-acudent'  element={<WelcomeAcudent/>}/>
+       <Route path='/see-acudent'  element={<SeeAcudents/>}/>
        <Route path='/admin'  element={<LoginAdmin/>}/>
        <Route path='/admin-welcome'  element={<Welcome/>}/>
     </Routes>

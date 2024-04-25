@@ -15,6 +15,11 @@ const Acudientes = () => {
 	const  noerror = () => {
 		setErrorr(false)
 	}
+	const Getinto = () => {
+		navigate("/welcome-acudent")
+	}
+
+
   return (
 	<div className='Login'>
 		<button className='Volver' onClick={volver}>Volver</button>
@@ -35,7 +40,7 @@ const Acudientes = () => {
 				</div>
 				<h2 className='Olvido'>Olvidaste la contraseña</h2>
 				<div className='Login_btn'>
-					<button onClick={error}>Ingresar</button>
+					<button onClick={Getinto}>Ingresar</button>
 				</div>
 			</form>
 			<div className={Errorr ?"error" :"noerror"}>

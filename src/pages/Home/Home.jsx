@@ -23,6 +23,10 @@ const [Rol, setRol] = useState(null)
 		case 3:
 			navigate("/login-acudiente")
 			break;
+
+		case 4:
+				navigate("/admin")
+				break;
 	
 		default:
 			break;
@@ -53,6 +57,7 @@ const [Rol, setRol] = useState(null)
 				<li onClick={() => seleccionarRol(1)} tabindex="0">Docentes</li>
 				<li  onClick={() => seleccionarRol(2)} tabindex="0">Estudiantes</li>
 				<li onClick={() => seleccionarRol(3)} tabindex="0">Acudientes</li>
+				<li onClick={() => seleccionarRol(4)} tabindex="0">Administrativo</li>
 			</nav>
 			<div className='Home_btn'>
 				<button onClick={enviar}>Ingresar</button>

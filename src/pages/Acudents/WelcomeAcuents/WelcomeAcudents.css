@@ -1,0 +1,137 @@
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    height: 50px;
+}
+.logo i {
+    font-size: 50px;
+
+}
+button {
+	border: none;
+	cursor: pointer;
+}
+.bienvenida-acudiente h1 {
+    font-size: 2.5em;
+    color: var(--Red);
+    text-align: center;
+    padding: 1em;
+	margin-top: 1em;
+	font-weight: 500;
+}
+.bienvenida-acudiente p {
+    font-size: 2em;
+    color: var(--color-letra);
+    text-align: center;
+	margin-top: em;
+	margin-bottom: 1em;
+	font-weight: 400;
+}
+.contenidoo {
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+.estu1 {
+    background-color: var(--headersD);
+    width:400px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.estu1 p {
+    font-size: 25px;
+    margin: 1em;
+	font-weight: 400;
+}
+.estu1 button {
+    background-color: var(--Red);
+    color: white;
+    font-size: 20px;
+    padding: 2px 15px;
+    margin: 1em;
+}
+.estu2 {
+    background-color: var(--headersD);
+    width:400px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.estu2 p {
+    font-size: 25px;
+    margin: 1em;
+	font-weight: 400;
+}
+.estu2 button {
+    background-color: var(--Red);
+    color: white;
+    font-size: 20px;
+    padding: 2px 15px;
+    margin: 1em;
+}
+.estu3 {
+    background-color: var(--headersD);
+    width:400px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.estu3 p {
+    font-size: 25px;
+    margin: 1em;
+	font-weight: 400;
+}
+.estu3 button {
+    background-color: var(--Red);
+    color: white;
+    font-size: 20px;
+    padding: 2px 15px;
+    margin: 1em;
+}
+
+
+.message-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sender-name {
+    font-weight: bold;
+}
+
+.message-time {
+    color: #666;
+}
+
+.message-body {
+    padding: 10px;
+	font-weight: 400;
+}

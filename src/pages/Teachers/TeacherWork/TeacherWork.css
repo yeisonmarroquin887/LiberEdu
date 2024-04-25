@@ -1,0 +1,31 @@
+.logo img {
+    height: 50px;
+}
+.logo i {
+    font-size: 50px;
+}
+.ini-text {
+    font-size: 2.5em;
+}
+.barra-vertical {
+    background-color: var(--BarraUser);
+    position: fixed;
+    top: 0;
+	left: 0;
+    width: 10em;
+    height: 100vh;
+	margin-top: 4.1em;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+.Teacher-option {
+    background-color: var(--BlueBlackAdmint);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: 1em;
+    margin-bottom: 5px;
+	cursor: pointer;
+}

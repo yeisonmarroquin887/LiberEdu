@@ -26,7 +26,7 @@
 }
 .Home_nav > section > nav {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	gap: 1em;
 	justify-content: center;
 	align-items: center;

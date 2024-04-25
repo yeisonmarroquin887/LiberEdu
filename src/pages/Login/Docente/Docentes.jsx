@@ -9,6 +9,10 @@ const Docentes = () => {
 		navigate("/")
 	}
 
+const welcomeD = () => {
+	navigate("/welcome-docente")
+}
+
     const  error = () => {
 		setErrorr(true)
 	}
@@ -45,7 +49,7 @@ const Docentes = () => {
 				<div className="err">
 				<h1>Error</h1>
 				<p>Has ingresado mal la contraseña <br /> o no eres docente</p>
-				<button onClick={noerror}>Intentar de nuevo</button>
+				<button onClick={welcomeD}>Intentar de nuevo</button>
 
 				</div>
 			</div>

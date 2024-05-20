@@ -1,12 +1,19 @@
 import React from 'react'
 import './LoginAdmin.css'
 import { useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form';
+import useLogingAdmint from '../../../../hooks/useLogingAdmint';
 
 const LoginAdmin = () => {
 
-	const navigate = useNavigate();
-	const Welcome = () => {
-		navigate("/admin-welcome")
+
+
+    const {register, handleSubmit, reset} = useForm()
+
+	const {LoginAdmint} = useLogingAdmint()
+
+	const submit = (data) => {
+        LoginAdmint(data)
 	}
 
   return (
@@ -22,7 +29,7 @@ const LoginAdmin = () => {
 			<img className='AdmintMovil' src="../../../../images/Admint.jpg" alt="" />
 			<img className='AdmintPc' src="../../../../images/Admint-Pc.jpg" alt="" />
 		</figure>
-		<form className='Admint_from' action="">
+		<form className='Admint_from' onSubmit={handleSubmit(submit)}>
 			<section className='Admint_Logo'>
 				<img src="../../../../public/images/Logo SiberEdu.jpg" alt="" />
 				<br />
@@ -30,14 +37,14 @@ const LoginAdmin = () => {
 			</section>
 			<div>
 				<label htmlFor="email">Correo:</label>
-				<input type="text" required/>
+				<input {...register("Email")} type="text" required/>
 			</div>
 			<div>
 				<label htmlFor="password">Contraseña:</label>
-				<input type="password" required/>
+				<input {...register("Contraseña")} type="password" required/>
 			</div>
 			<h1 className='From_Olvido'>Olvidaste la contraseña</h1>
-			<button onClick={Welcome}>Ingresar</button>
+			<button >Ingresar</button>
 		</form>
 		<h1 className='Admint_Olvido'>Olvidaste la contraseña</h1>
 	  </article>

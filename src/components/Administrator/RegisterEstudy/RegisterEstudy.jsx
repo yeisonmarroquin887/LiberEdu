@@ -1,72 +1,77 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './RegisterEstudy.css'
+import RegisterEstudentForm from './RegisterEstudentForm'
+import useAddCruddTwo from '../../../hooks/useAddCruddTwo'
+import { useForm } from 'react-hook-form'
+import useAddCrud from '../../../hooks/useAddCrud'
 
 const RegisterEstudy = () => {
+	const [IdRol, setIdRol] = useState()
+    const {addAcudent} = useAddCruddTwo()
+	const { getRoles, Roles} = useAddCrud()
+    const {register, handleSubmit, reset} = useForm()
+ 
+	useEffect(() => {
+		getRoles()
+	}, [])
+	const submit = (data) => {
+		data.rolId = IdRol
+       addAcudent(data)
+	}
+
+
+
   return (
 	<section className='AddStudentsAndAcudents'>
+	
 	  <article className='Acudents'>
 		<h1>Crear Acudiente</h1>
-		<form className='Acudents_form' action="">
+		<form onSubmit={handleSubmit(submit)} className='Acudents_form' action="">
+			<div>
+			<div >
+				<label htmlFor="">Rol:</label>
+				<select name="" id="" onChange={(e) => {setIdRol(e.target.value)}}>
+					<option value="">Selecciona el rol</option>
+					{
+						Roles?.map((rol) => (
+							<option key={rol.id} value={rol.id}>{rol.Nombre}</option>
+						))
+					}
+				</select>
+			</div>
 			<div>
 				<label htmlFor="">Nombres:</label>
-				<input type="text" />
+				<input {...register("Nombres")} type="text" />
 			</div>
 			<div>
 				<label htmlFor="">Apellidos:</label>
-				<input type="text" />
+				<input {...register("Apellidos")} type="text" />
 			</div>
 			<div>
 				<label htmlFor="">Correo:</label>
-				<input type="email" />
+				<input {...register("Email")} type="email" />
+			</div>
+			</div>
+			<div className='div1'>
+               <div>
+				<label htmlFor="">Contraseña:</label>
+				<input {...register("Contraseña")} type="password" />
 			</div>
 			<div>
-				<label htmlFor="">Contraseña:</label>
-				<input type="password" />
+				<label htmlFor="">Telefono:</label>
+				<input {...register("Telefono")} type="number" />
 			</div>
 			<div>
 				<label htmlFor="">Cedula:</label>
-				<input type="number" />
+				<input {...register("Identificacion")} type="number" />
 			</div>
+			</div>
+			
+			
 			<button>Registrar</button>
 		</form>
 	  </article>
-
-	  <article className='Estudents'>
-	  <h1>Crear Estudiante</h1>
-		<form className='Acudents_form' action="">
-			<div>
-				<label htmlFor="">Nombres:</label>
-				<input type="text" />
-			</div>
-			<div>
-				<label htmlFor="">Apellidos:</label>
-				<input type="text" />
-			</div>
-			<div>
-				<label htmlFor="">Correo:</label>
-				<input type="email" />
-			</div>
-			<div>
-				<label htmlFor="">Contraseña:</label>
-				<input type="password" />
-			</div>
-			<div>
-				<label htmlFor="">No.Identificacion:</label>
-				<input type="number" />
-			</div>
-			<div>
-				<label htmlFor="">CC. Acudiene:</label>
-				<input type="number" />
-			</div>
-			<div>
-				<label htmlFor="">Curso:</label>
-				<select name="" id="">
-					<option value="">Selecciona su curso</option>
-				</select>
-			</div>
-			<button>Registrar</button>
-		</form>
-	  </article>
+           <RegisterEstudentForm Roles={Roles} />
 	</section>
   )
 }

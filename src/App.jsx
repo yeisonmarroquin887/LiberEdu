@@ -12,6 +12,7 @@ import WelcomeStudents from './pages/Estudents/WelcomeEstudents/WelcomeStudents'
 import WorkStudent from './pages/Estudents/WorkStudents/WorkStudent'
 import WelcomeAcudent from './pages/Acudents/WelcomeAcuents/WelcomeAcudent'
 import SeeAcudents from './pages/Acudents/SeeAcudent/SeeAcudents'
+import Prueba from './pages/Prueba'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <article>
     <Routes>
        <Route path='/'  element={<Home/>}/>
+       <Route path='/roles'  element={<Prueba/>}/>
        <Route path='/login-docente'  element={<Docentes/>}/>
        <Route path='/welcome-docente'  element={<WelcomeTeacher/>}/>
        <Route path='/work-docente'  element={<TeacherWork/>}/>
